@@ -30,12 +30,17 @@ Zadatak menadžera. Analizira stanje u agenciji (potražnja) i donosi zaključak
 
 ## Akteri
 - Korisnik usluga (klijent, online klijent)
+
 ima mogućnost iznajmljivanja i rezervacije automobila u poslovnici (klijent) ili putem online sistema (online klijent)
 - Uposlenik
+
 radi na poslovima iznajmljivanja, rezervacije, naplaćivanja, ažuriranja VIP kluba (dodavanje novih/brisanje postojećih članova u bazi softvera)
 - Vozač
+
 po želji klijenta dovodi vozilo na ugovoreno mjesto i dodatno vrsi usluge vožnje uz novčanu naknadu (za članove VIP kluba ova usluga je besplatna)
 - Menadžer
+
 bavi se nabavkom novih vozila uz adekvatno obnavljanje baze podataka u softveru, zatim održavanjem voznog parka (registracija, popravka...), također provjerava ispravnost softvera i usljed eventualnog kvara preduzima adekvatne radnje
 - Direktor
+
 ima kontrolu nad sveukupnim procesom
