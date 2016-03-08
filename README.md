@@ -4,9 +4,11 @@
 1. Mensur Kurtagić
 2. Adnana Šantić
 3. Mahira Mahmutović
+
 ## Opis teme
 Rent-a-car aplikacija omogućava efikasniji rad rent a car agencije i također korisnicima odnosno klijentima nudi pojednostavljenje i znatno ubrzanje procesa izdavanja vozila. Na ovaj način se omogućava jednostavno kreiranje ugovora između korisnika i agencije i adekvatna sinhronizacija aktivnosti agencije. Arhitektura aplikacije omogućava rad u više geografski udaljenih 
 poslovnica koje međusobno jedinstvo podataka održavaju sinhronizacijom kroz Internet server.Aplikacija je dostupna korisniku sa uređajem koji ima pristup internetu. 
+
 ## Procesi
 #### Proces registracije klijenta
 Korisnik popunjava formular sa ličnim podacima.
@@ -18,12 +20,14 @@ Nakon rezervacije određenog vozila od strane klijenta neophodno je u sistemu to
 Vrši se na licu mjesta (u poslovnici) prilikom povratka vozila. O cijeni je klijent bio obavješten prilikom procesa rezervacije. Dodatni popust za članove VIP kluba kao i za plaćanje karticom.
 #### Proces nabavke novih vozila
 Zadatak menadžera. Analizira stanje u agenciji (potražnja) i donosi zaključak o dovoljnoj/nedovoljnoj opremljenosti o čemu obavještava direktora (izvještaj). Direktor zatim donosi odluku o novoj nabavci.
+
 ## Funkcionalnosti
 - Mogućnost pregledavanja stanja vozila
 - Uvid u status svakog vozila na osnovu njegovog tehničkog pregleda (servisa)
 - Mogućnost uvida u zauzeća auta od strane pojedinih korisnika s ciljem kreiranja bolje ponude za iste
 - Mogućnost uvida u najviše i najmanje iznajmljivani automobil (radi ocjenjivanja potražnje)
 - Mogućnost uvida u ocjene korisnika (zarad poboljšanja kvalitete usluge)
+
 ## Akteri
 - Korisnik usluga (klijent, online klijent)
 ima mogućnost iznajmljivanja i rezervacije automobila u poslovnici (klijent) ili putem online sistema (online klijent)
