@@ -2,8 +2,9 @@
 ## Rent a car
 #### Članovi tima:
 1. Mensur Kurtagić
-2. Adnana Šantić
-3. Mahira Mahmutović
+2. Mahira Mahmutović
+3. Adnana Šantić
+4. Bernis Agović
 
 ## Opis teme
 Rent-a-car aplikacija omogućava efikasniji rad rent a car agencije i također korisnicima odnosno klijentima nudi pojednostavljenje i znatno ubrzanje procesa izdavanja vozila. Na ovaj način se omogućava jednostavno kreiranje ugovora između korisnika i agencije i adekvatna sinhronizacija aktivnosti agencije. Arhitektura aplikacije omogućava rad u više geografski udaljenih 
@@ -46,6 +47,6 @@ po želji klijenta dovodi vozilo na ugovoreno mjesto i dodatno vrsi usluge vožn
 
 bavi se nabavkom novih vozila uz adekvatno obnavljanje baze podataka u softveru, zatim održavanjem voznog parka (registracija, popravka...), također provjerava ispravnost softvera i usljed eventualnog kvara preduzima adekvatne radnje
 
-- Direktor
+- Administrator
 
 ima kontrolu nad sveukupnim procesom
