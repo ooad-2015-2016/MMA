@@ -10,20 +10,20 @@
 Rent-a-car aplikacija omogućava efikasniji rad rent a car agencije i također korisnicima odnosno klijentima nudi pojednostavljenje i znatno ubrzanje procesa izdavanja vozila. Na ovaj način se omogućava jednostavno kreiranje ugovora između korisnika i agencije i adekvatna sinhronizacija aktivnosti agencije. Arhitektura aplikacije omogućava rad u više geografski udaljenih 
 poslovnica koje međusobno jedinstvo podataka održavaju sinhronizacijom kroz Internet server. Aplikacija je dostupna korisniku sa uređajem koji ima pristup internetu. 
 
-Princip rada je sljedeći: (potencijalni) klijent pokreće aplikaciju (ili lično posjećuje neku od rent a car poslovnica) u potrazi za odgovarajućim vozilom za određeni vremenski period. U slučaju da klijent pronađe ono što mu je potrebno i da želi poslovati sa agencijom, dolazi do zaključivanja ugovora između klijenta i agencije (ukoliko klijent zadovoljava potrebne zahtjeve). U slučaju da je klijentu potreban vozač (klijent nema vozačku dozvolu, ne poznaje grad ili samo ne može preuzeti vozilo u dogovorenom terminu) agencija angažuje vozača za dati posao (uz dodatnu novčanu naknadu od strane klijenta). Izabrano vozilo se označava kao nedostupno za dati vremenski period.
+Princip rada je sljedeći: (potencijalni) klijent pokreće aplikaciju (ili lično posjećuje neku od rent a car poslovnica) u potrazi za odgovarajućim vozilom na određeni vremenski period. U slučaju da klijent pronađe ono što mu je potrebno i da želi poslovati sa agencijom, dolazi do zaključivanja ugovora između klijenta i agencije (ukoliko klijent zadovoljava potrebne zahtjeve). U slučaju da je klijentu potreban vozač (klijent nema vozačku dozvolu, ne poznaje grad ili samo ne može preuzeti vozilo u dogovorenom terminu) agencija angažuje vozača za dati posao (uz dodatnu novčanu naknadu od strane klijenta). Izabrano vozilo se označava kao nedostupno za dati vremenski period.
 Nakon isteka unaprijed dogovorenog vremenskog roka klijent (ili vozač) vraća vozilo u agenciju, pri čemu vrši plaćanje usluga (cijeli ili preostali dio, ukoliko je dio plaćen unaprijed). Vozilo se ponovo označava kao dostupno.
 
 ## Procesi
 #### Proces registracije klijenta
-Korisnik popunjava formular sa ličnim podacima.
+Korisnik popunjava formular sa ličnim podacima. Uposlenik provjerava regularnost unesenih podataka. Ukoliko uneseni podaci nisu validni, formular se vraća korisniku na korekciju. Ukoliko korisnik ne zadovoljava uslove korištenja usluga, kompletan proces se obustavlja.
 #### Proces rezervacije
 Korisnik iz postojeće baze vrši odabir dostupnih vozila. Prije pristupa bazi neophodno je da korisnik odabere grad/poslovnicu i da unese datum preuzimanja i vraćanja vozila, nakon čega dobija ponudu dostupnih automobila u tom gradu i u to vrijeme. Korisnik ima mogućnost naknadnog produžavanja trajanja rezervacije.
 #### Proces ažuriranja baze dostupnih vozila
 Nakon rezervacije određenog vozila od strane klijenta neophodno je u sistemu to isto vozilo označiti kao nedostupno u periodu trajanja te iste rezervacije, isti slučaj je i prilikom odvođenja vozila u servis. Prilikom povratka vozila u poslovnicu isto se označava kao dostupno u bazi. 
 #### Proces naplate usluga
-Vrši se na licu mjesta (u poslovnici) prilikom povratka vozila. O cijeni je klijent bio obavješten prilikom procesa rezervacije. Dodatni popust za članove VIP kluba kao i za plaćanje karticom.
+Vrši se na licu mjesta (u poslovnici) prilikom povratka vozila. O cijeni je klijent bio obavješten prilikom procesa rezervacije. Dodatni popust za članove VIP kluba. VIP članom se smatra stalni korisnik (korisnik koji je u određenom periodu koristio usluge agencije određeni broj puta. Vremenski period i potreban broj korištenja određuje agencija).
 #### Proces nabavke novih vozila
-Zadatak menadžera. Analizira stanje u agenciji (potražnja) i donosi zaključak o dovoljnoj/nedovoljnoj opremljenosti o čemu obavještava direktora (izvještaj). Direktor zatim donosi odluku o novoj nabavci.
+Zadatak menadžera. Analizira stanje u agenciji (potražnja) i donosi zaključak o dovoljnoj/nedovoljnoj opremljenosti o čemu obavještava administratora (izvještaj). Administrator zatim donosi odluku o novoj nabavci.
 
 ## Funkcionalnosti
 - Mogućnost pregledavanja stanja vozila
