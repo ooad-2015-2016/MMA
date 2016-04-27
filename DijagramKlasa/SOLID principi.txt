@@ -1,0 +1,33 @@
+SOLID PRINCIPI:
+
+1. Princip pojedinaène odgovornosti: 'Klasa bi trebala imati samo jedan razlog za promjenu.'
+
+Klase Vozilo i Rezervacija narušavaju princip pojedinaène odgovornosti. Mogli bismo pored klase Vozilo napraviti klasu
+Servis koja bi vodila raèuna o tome da li je vozilu potreban servis, ili nova registracija.
+Time bismo mogli sprijeèiti da klasa Vozilo narušava navedeni princip.
+Pored klase Rezervacija mogli bismo napraviti klase Preuzimanje i Vraæanje koje bi èuvale i postavljale odgovarajuæe datume.
+
+
+2. Otvoreno zatvoren princip: 'Entiteti softvera trebali bi biti otvoreni za nadogradnju, ali zatvoreni za modifikacije.'
+
+Ovaj princip je zadovoljen jer nadogradnjom postojeæih klasa ne utièemo na postojeæe metode i atribute tih klasa.
+
+
+3. Liskov princip zamjene: 'Podtipovi moraju biti zamjenjivi njihovim osnovnim tipovima.'
+
+Ovaj princip je zadovoljen. Podtipovi Klijent, Uposlenik i Menadžer mogu biti zamijenjeni svojim osnovnim tipom Osoba
+(nema nekih metoda èiji bi poziv mogao uzrokovati problem u radu sa izvedenim klasama).
+
+
+4. Princip inverzije ovisnosti:
+- 'Moduli visokog nivoa ne bi trebali ovisiti od modula niskog nivoa. Oba bi trebalo da ovise od apstrakcija.'
+- 'Moduli ne bi trebali  ovisti od detalja. Detalji bi trebali biti ovisni od apstrakcija'
+
+Da bismo sprijeèili narušavanje ovog pincipa klasu Osoba bi trebalo proglasiti apstraktnom, i time osigurati da ona neæe 
+doživljavati naroèite promjene tokom vremena.
+
+
+5. Princip izoliranja interfejsa: 'Klijenti ne treba da ovise o metodama koje neæe koristiti.'
+
+Možemo reæi da je ovaj princip zadovoljen jer u klasama nema metoda koje korisnik neæe koristiti prilikom ažuriranja 
+podataka vezanih za sam sistem.
