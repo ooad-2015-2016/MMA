@@ -9,7 +9,7 @@
 
 
 
-namespace Rent_a_Car
+namespace Rent_a_car
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
@@ -124,15 +124,23 @@ namespace Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "Rent_a_Car.MainPage";
+            _typeNameTable = new string[7];
+            _typeNameTable[0] = "Rent_a_car.Treca_forma";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "Rent_a_car.Druga_forma";
+            _typeNameTable[4] = "Rent_a_car.MainPage";
+            _typeNameTable[5] = "String";
+            _typeNameTable[6] = "Boolean";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::Rent_a_Car.MainPage);
+            _typeTable = new global::System.Type[7];
+            _typeTable[0] = typeof(global::Rent_a_car.Treca_forma);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::Rent_a_car.Druga_forma);
+            _typeTable[4] = typeof(global::Rent_a_car.MainPage);
+            _typeTable[5] = typeof(global::System.String);
+            _typeTable[6] = typeof(global::System.Boolean);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -167,7 +175,9 @@ namespace Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Rent_a_Car.MainPage(); }
+        private object Activate_0_Treca_forma() { return new global::Rent_a_car.Treca_forma(); }
+        private object Activate_3_Druga_forma() { return new global::Rent_a_car.Druga_forma(); }
+        private object Activate_4_MainPage() { return new global::Rent_a_car.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -179,9 +189,9 @@ namespace Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Rent_a_Car.MainPage
+            case 0:   //  Rent_a_car.Treca_forma
                 userType = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_Treca_forma;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -193,16 +203,161 @@ namespace Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  Rent_a_car.Druga_forma
+                userType = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_Druga_forma;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Rent_a_car.MainPage
+                userType = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MainPage;
+                userType.AddMemberName("ime");
+                userType.AddMemberName("prezime");
+                userType.AddMemberName("br_vozacke");
+                userType.AddMemberName("vozac");
+                userType.AddMemberName("vip");
+                userType.AddMemberName("odredista");
+                userType.AddMemberName("preuzimanje");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  String
+                xamlType = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Boolean
+                xamlType = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_MainPage_ime(object instance)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            return that.ime;
+        }
+        private void set_0_MainPage_ime(object instance, object Value)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            that.ime = (global::System.String)Value;
+        }
+        private object get_1_MainPage_prezime(object instance)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            return that.prezime;
+        }
+        private void set_1_MainPage_prezime(object instance, object Value)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            that.prezime = (global::System.String)Value;
+        }
+        private object get_2_MainPage_br_vozacke(object instance)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            return that.br_vozacke;
+        }
+        private void set_2_MainPage_br_vozacke(object instance, object Value)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            that.br_vozacke = (global::System.String)Value;
+        }
+        private object get_3_MainPage_vozac(object instance)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            return that.vozac;
+        }
+        private void set_3_MainPage_vozac(object instance, object Value)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            that.vozac = (global::System.Boolean)Value;
+        }
+        private object get_4_MainPage_vip(object instance)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            return that.vip;
+        }
+        private void set_4_MainPage_vip(object instance, object Value)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            that.vip = (global::System.Boolean)Value;
+        }
+        private object get_5_MainPage_odredista(object instance)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            return that.odredista;
+        }
+        private void set_5_MainPage_odredista(object instance, object Value)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            that.odredista = (global::System.String)Value;
+        }
+        private object get_6_MainPage_preuzimanje(object instance)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            return that.preuzimanje;
+        }
+        private void set_6_MainPage_preuzimanje(object instance, object Value)
+        {
+            var that = (global::Rent_a_car.MainPage)instance;
+            that.preuzimanje = (global::System.String)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "Rent_a_car.MainPage.ime":
+                userType = (global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Rent_a_car.MainPage");
+                xamlMember = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlMember(this, "ime", "String");
+                xamlMember.Getter = get_0_MainPage_ime;
+                xamlMember.Setter = set_0_MainPage_ime;
+                break;
+            case "Rent_a_car.MainPage.prezime":
+                userType = (global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Rent_a_car.MainPage");
+                xamlMember = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlMember(this, "prezime", "String");
+                xamlMember.Getter = get_1_MainPage_prezime;
+                xamlMember.Setter = set_1_MainPage_prezime;
+                break;
+            case "Rent_a_car.MainPage.br_vozacke":
+                userType = (global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Rent_a_car.MainPage");
+                xamlMember = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlMember(this, "br_vozacke", "String");
+                xamlMember.Getter = get_2_MainPage_br_vozacke;
+                xamlMember.Setter = set_2_MainPage_br_vozacke;
+                break;
+            case "Rent_a_car.MainPage.vozac":
+                userType = (global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Rent_a_car.MainPage");
+                xamlMember = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlMember(this, "vozac", "Boolean");
+                xamlMember.Getter = get_3_MainPage_vozac;
+                xamlMember.Setter = set_3_MainPage_vozac;
+                break;
+            case "Rent_a_car.MainPage.vip":
+                userType = (global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Rent_a_car.MainPage");
+                xamlMember = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlMember(this, "vip", "Boolean");
+                xamlMember.Getter = get_4_MainPage_vip;
+                xamlMember.Setter = set_4_MainPage_vip;
+                break;
+            case "Rent_a_car.MainPage.odredista":
+                userType = (global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Rent_a_car.MainPage");
+                xamlMember = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlMember(this, "odredista", "String");
+                xamlMember.Getter = get_5_MainPage_odredista;
+                xamlMember.Setter = set_5_MainPage_odredista;
+                break;
+            case "Rent_a_car.MainPage.preuzimanje":
+                userType = (global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Rent_a_car.MainPage");
+                xamlMember = new global::Rent_a_Car.Rent_a_Car_Windows_XamlTypeInfo.XamlMember(this, "preuzimanje", "String");
+                xamlMember.Getter = get_6_MainPage_preuzimanje;
+                xamlMember.Setter = set_6_MainPage_preuzimanje;
+                break;
+            }
             return xamlMember;
         }
     }

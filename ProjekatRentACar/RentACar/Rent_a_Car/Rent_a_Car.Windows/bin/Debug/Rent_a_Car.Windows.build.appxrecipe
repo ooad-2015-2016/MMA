@@ -1,50 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-65UQG6L</Machine>
+    <Machine>DESKTOP-MHT7MRC</Machine>
     <WindowsUser>live2learn</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>6c5ae71c-a673-420e-9287-82b72daa83d2</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\Rent_a_Car.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\Rent_a_Car.Windows.exe">
       <PackagePath>Rent_a_Car.Windows.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\Treca_forma.xbf">
+      <PackagePath>Treca_forma.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\Druga_forma.xbf">
+      <PackagePath>Druga_forma.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\Rent_a_Car.Windows.xr.xml">
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\Rent_a_Car.Windows.xr.xml">
       <PackagePath>Rent_a_Car.Windows.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\Forme\Rent_a_Car\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\live2learn\Desktop\MMA-master\ProjekatRentACar\RentACar\Rent_a_Car\Rent_a_Car.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
