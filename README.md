@@ -53,3 +53,8 @@ bavi se nabavkom novih vozila uz adekvatno obnavljanje baze podataka u softveru,
 - Administrator
 
 ima kontrolu nad sveukupnim procesom
+
+
+
+Link za video koji prikazuje rad aplikacije:
+    https://www.youtube.com/watch?v=61VBM7LgAXw&feature=youtu.be
